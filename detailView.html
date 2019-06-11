@@ -1,0 +1,42 @@
+<div class="col-md-12 iconBar">
+  <a ui-sref="index">
+    <i class="fa fa-arrow-left"></i>
+  </a>
+  <a ui-sref="index" ng-click="saveCustomer(customer)">
+    <i class="fa fa-floppy-o"></i>
+  </a>
+</div>
+<div class="col-md-12 noPadding" id="editField">
+  <div class="col-md-12 ">
+    <label class="col-md-12 noPadding">
+      Salutation:
+      <select class="form-control datepicker" ng-model="customer.gender">
+        <option value="m">Mr.</option>
+        <option value="w">Mrs.</option>
+      </select>
+    </label>
+  </div>
+  <label class="col-md-6 ">
+    Name*:
+    <input class="form-control" ng-model="customer.name.last">
+  </label>
+  <label class="col-md-6">
+    Forename*:
+    <input class="form-control" ng-model="customer.name.first">
+  </label>
+    
+  <div class="col-md-6 ">
+    <label class=" datepicker">
+      birthday:
+      <input class="form-control" type="date" ng-model="customer.birthday">
+    </label>
+    <label class="datepicker">
+      last Contact:
+      <input class="form-control" type="date" ng-model="customer.lastContact">
+    </label>
+  </div>
+  <label class="col-md-6">
+    customer Lifetime Value:
+    <input class="form-control" ng-model="customer.customerLifetimeValue">
+  </label>
+</div>

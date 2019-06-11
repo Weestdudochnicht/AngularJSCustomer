@@ -1,0 +1,59 @@
+<h1 class="col-md-12">Hello User!</h1>
+<h2 class="col-md-12">Our Current Customers are:</h2>
+<div class="col-md-12 entries noPadding" ng-class-odd="'odd'" ng-class="{'first':$first}" ng-class-even="'even'" ng-repeat="value in dataArray track by $index">
+  <div class="col-md-12">
+    <span ng-switch="" on="value.gender" style="float:left">
+        <span ng-switch-when="m" ng-switch-when-separator="|">Mr.</span>
+    <span ng-switch-when="w">Mrs.</span>
+    </span>
+    {{value.name.last}}, &nbsp; {{value.name.first}}, &nbsp; <i class="fa fa-trash deleteIcon" ng-click="deleteCustomer(value)"></i>
+    <a class="editIcon" ui-sref="detail" ng-click="selectedCustomer(value)">
+      <i class="fa fa-pencil-square-o"></i> &nbsp; </a>
+  </div>
+  <div class="col-md-12">
+    <span ng-show="value.birthday">birthday:&nbsp;{{value.birthday | date}},</span>
+    <span ng-show="value.customerLifetimeValue">customer Lifetime Value:&nbsp;{{value.customerLifetimeValue}},</span>
+    <span ng-show="value.lastContact">last Contact:&nbsp;{{value.lastContact | date}}</span>
+  </div>
+</div>
+<div class="addForm">
+  <h2 class="col-md-12">
+      Add a new Customer: 
+    </h2>
+  <div class="col-md-12" id="addField">
+    <div class="col-md-12 noPadding">
+      <i class="fa fa-plus-square-o addIcon" ng-click="addCustomer()"></i>
+      <div class="col-md-12 noPadding">
+      <label class="col-md-12">
+        Salutation:
+        <select class="form-control datepicker" ng-model="newcustomer.gender">
+          <option value="m">Mr.</option>
+          <option value="w">Mrs.</option>
+        </select>
+      </label>
+      </div>
+      <label class="col-md-6 ">
+        Name*:
+        <input class="form-control" ng-model="newcustomer.name.last">
+      </label>
+      <label class="col-md-6">
+        Forename*:
+        <input class="form-control" ng-model="newcustomer.name.first">
+      </label>
+    </div>
+    <div class="col-md-6 ">
+      <label class=" datepicker">
+        birthday:
+        <input class="form-control" type="date" ng-model="newcustomer.birthday">
+      </label>
+      <label class="datepicker">
+        last Contact:
+        <input class="form-control" type="date" ng-model="newcustomer.lastContact">
+      </label>
+    </div>
+    <label class="col-md-6">
+      customer Lifetime Value:
+      <input class="form-control" ng-model="newcustomer.customerLifetimeValue">
+    </label>
+  </div>
+</div>

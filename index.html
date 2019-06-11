@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="customerApp">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Customer Plunker</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+    <link data-require="jasmine@*" data-semver="2.0.0" rel="stylesheet" href="//cdn.jsdelivr.net/jasmine/2.0.0/jasmine.css" />
+    <script data-require="jasmine@*" data-semver="2.0.0" src="//cdn.jsdelivr.net/jasmine/2.0.0/jasmine.js"></script>
+    <script data-require="jasmine@*" data-semver="2.0.0" src="//cdn.jsdelivr.net/jasmine/2.0.0/jasmine-html.js"></script>
+    <script data-require="jasmine@*" data-semver="2.0.0" src="//cdn.jsdelivr.net/jasmine/2.0.0/boot.js"></script>
+    <script data-require="angular.js@*" data-semver="1.3.0-beta.5" src="https://code.angularjs.org/1.3.0-beta.5/angular.js"></script>
+    <script data-require="angular-mocks@*" data-semver="1.2.16" src="https://code.angularjs.org/1.2.16/angular-mocks.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.14/angular-ui-router.min.js"></script>
+    <link data-require="bootstrap-css@*" data-semver="4.0.0-alpha.4" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css" />
+    <link data-require="font-awesome@4.7.0" data-semver="4.7.0" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="app.js"></script>
+    <script src="data.json"></script>
+    <script src="testinCtrl.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    <!-- normally i would add a nay to navigate but it seems that the plunker got a problem wit this
+    in combination with ui-router
+    <nav class="navbar">
+      <div class="navbar-header">
+          Customer Plunker
+      </div>
+      <ul class="nav navbar-nav">
+          <li><a ui-sref="index">Overview</a></li>
+          <li> <a ui-sref="404">404</a></li>
+      </ul>
+  </nav>
+   -->
+    <div ui-view=""></div>
+  </body>
+
+</html>

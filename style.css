@@ -1,0 +1,127 @@
+.entries {
+  padding: 0;
+  border-bottom: 1px solid #333;
+}
+
+.first {
+  border-top: 1px solid #333;
+}
+
+.odd {
+  background-color: #fff;
+}
+
+.even {
+  background-color: #D3D3D3;
+}
+
+.addForm {
+  margin-top: 25px;
+}
+
+body {
+  padding: 10px 15px!important;
+}
+
+.noPadding {
+  padding: 0!important;
+}
+
+h1.col-md-12,
+h2.col-md-12 {
+  padding: 0;
+}
+
+h2{
+  margin-top:35px!important;
+}
+.red {
+  color: red;
+}
+
+.redBorder {
+  border: 2px solid red;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar>div {
+  float: left;
+  margin-right: 30px;
+}
+
+.navbar>ul {
+  float: left;
+}
+
+.navbar>ul >li {
+  padding: 0 15px;
+  display: inline;
+}
+
+.editIcon {
+  float: right;
+}
+
+.deleteIcon {
+  color: #014c8c;
+  float: right;
+  padding-top: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.iconBar {
+  height: 25px;
+  background-color: #A9A9A9;
+}
+
+#editField,
+#addField {
+  background-color: #D3D3D3;
+}
+
+#addField {
+  padding: 10px 10px 10px 0;
+}
+
+div.iconBar > a {
+  float: right;
+  margin: 0 10px;
+}
+
+div.iconBar > a:nth-child(2):hover,
+div.iconBar > a:nth-child(1):hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.col-md-12 {
+  width: 100%;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+a,
+a:hover {
+  text-decoration: none!important;
+}
+
+.fa {
+  color: #0275d8;
+  cursor: pointer;
+}
+
+
+.addIcon {
+  float: right;
+  font-size: 2rem!important;
+}
+
+.datepicker{
+  width: 150px!important;
+}
